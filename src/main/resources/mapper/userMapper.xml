@@ -19,4 +19,8 @@
         update user set user_name=#{user.userName},user_password=#{user.userPassword} where user_id = #{user.userId}
     </update>
 
+    <select id="getUserByName" resultMap="user">
+        select from user where user_name = #{userName}
+    </select>
+
 </mapper>
