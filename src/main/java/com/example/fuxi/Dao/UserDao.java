@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface userDao {
+public interface UserDao {
     int insertUser(@Param("user") User user);
     int deleteUser(@Param("userName") String userName);
     int updateUser(@Param("user") User user);
