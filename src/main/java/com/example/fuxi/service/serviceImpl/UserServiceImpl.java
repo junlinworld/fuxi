@@ -30,4 +30,9 @@ public class UserServiceImpl implements Userface {
     public User getUserByName(String userName) {
         return userDao.getUserByName(userName);
     }
+
+    @Override
+    public User getUserById(int userId) {
+        return userDao.getUserById(userId);
+    }
 }

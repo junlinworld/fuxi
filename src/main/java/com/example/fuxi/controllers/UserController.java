@@ -22,4 +22,9 @@ public class UserController {
     public User getUserByName(String userName){
         return userService.getUserByName(userName);
     }
+
+    @RequestMapping(value = "/getUserById",method = RequestMethod.GET)
+    public User getUserById(int userId){
+        return userService.getUserById(userId);
+    }
 }
